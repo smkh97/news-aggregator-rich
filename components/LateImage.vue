@@ -9,17 +9,19 @@
       <NuxtImg
         :src="src"
         :alt="alt"
-        :width="width"
-        :height="height"
+        quality="80"
+        format="webp"
+        fit="cover"
+        width="500"
+        height="500"
         class="w-full h-full object-cover transition-opacity duration-300"
         :class="{ 'opacity-0': isBlurred }"
-        format="webp,avif"
         :loading="critical ? 'eager' : 'lazy'"
         :modifiers="{ quality, fit: 'cover' }"
         :sizes="calculatedSizes"
-        :preload="critical"
         densities="x1 x2"
         data-testid="optimized-image"
+        preload 
         @load="handleImageLoad"
         />
       

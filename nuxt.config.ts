@@ -40,14 +40,16 @@ export default defineNuxtConfig({
   // Add image configuration with proper typing
   image: {
     domains: [],
-    presets: {
-      default: {
-        modifiers: {
-          format: 'webp',
-          quality: 80,
-          fit: 'cover'
-        }
-      }
-    }
+    format: ['avif', 'webp'], // Fallback order
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+    
   }
 })
