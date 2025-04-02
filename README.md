@@ -83,13 +83,13 @@ news-aggregator/
 
 ### Trade off
 
-Though nuxt 3 images a module has been set with appropriate settings for dynamic url the configuration 
+- Though nuxt 3 images a module has been set with appropriate settings for dynamic url the configuration 
 is not being applied for all images as there are breakages from the news api urls 
 
-XSS headers and cross site scripting policy was previously tried to be set and removed since the news api url are too random urls
+- XSS headers and cross site scripting policy was previously tried to be set and removed since the news api url are too random urls
 to apply self script as chrome blocks xss policy 
 
-Search page has been added fuzzy search type of debounce function for intutive feel for user , The drawback is more api calls 
+- Search page has been added fuzzy search type of debounce function for intutive feel for user , The drawback is more api calls 
 But this would be more appropriate as to waste user time much 
 
 Finally emit function need to be improved
@@ -97,9 +97,7 @@ Finally emit function need to be improved
 
 ### **Screenshots Links**  
 
-Check the public folder for screenshots of the images includes both desktop and mobile displays
-
-public/
+- Check the public folder for screenshots of the images includes both desktop and mobile displays public/
 
 
 ### **Performance Optimizations**  
