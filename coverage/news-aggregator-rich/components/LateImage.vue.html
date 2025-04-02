@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/108</span>
+                <span class='fraction'>0/128</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/108</span>
+                <span class='fraction'>0/128</span>
             </div>
         
             
@@ -170,7 +170,27 @@
 <a name='L105'></a><a href='#L105'>105</a>
 <a name='L106'></a><a href='#L106'>106</a>
 <a name='L107'></a><a href='#L107'>107</a>
-<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -277,121 +297,161 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >&lt;template&gt;<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >  &lt;div class="relative overflow-hidden"&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;img</span>
-<span class="cstat-no" title="statement not covered" >      v-if="isLoaded &amp;&amp; !hasError"</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >&lt;template&gt;</span></span></span>
+<span class="cstat-no" title="statement not covered" >  &lt;div </span>
+<span class="cstat-no" title="statement not covered" >    class="relative overflow-hidden"</span>
+<span class="cstat-no" title="statement not covered" >    role="img"</span>
+<span class="cstat-no" title="statement not covered" >    :aria-label="alt"</span>
+<span class="cstat-no" title="statement not covered" >  &gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;NuxtImg</span>
 <span class="cstat-no" title="statement not covered" >      :src="src"</span>
 <span class="cstat-no" title="statement not covered" >      :alt="alt"</span>
 <span class="cstat-no" title="statement not covered" >      class="w-full h-full object-cover transition-opacity duration-300"</span>
 <span class="cstat-no" title="statement not covered" >      :class="{ 'opacity-0': isBlurred }"</span>
-<span class="cstat-no" title="statement not covered" >      @load="handleLoad"</span>
-<span class="cstat-no" title="statement not covered" >      @error="handleError"</span>
-<span class="cstat-no" title="statement not covered" >    /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      format="webp"</span>
+<span class="cstat-no" title="statement not covered" >      loading="lazy"</span>
+<span class="cstat-no" title="statement not covered" >      :modifiers="{ quality }"</span>
+<span class="cstat-no" title="statement not covered" >      :sizes="sizes"</span>
+<span class="cstat-no" title="statement not covered" >      data-testid="optimized-image"</span>
+<span class="cstat-no" title="statement not covered" >      @load="handleImageLoad"</span>
+<span class="cstat-no" title="statement not covered" >        /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    </span>
+<span class="cstat-no" title="statement not covered" >    &lt;!-- Loading State --&gt;</span>
 <span class="cstat-no" title="statement not covered" >    &lt;div</span>
-<span class="cstat-no" title="statement not covered" >      v-if="!isLoaded || isBlurred"</span>
-<span class="cstat-no" title="statement not covered" >      class="absolute inset-0 bg-muted animate-pulse"</span>
+<span class="cstat-no" title="statement not covered" >      v-if="shouldShowLoading"</span>
+<span class="cstat-no" title="statement not covered" >      class="absolute inset-0 bg-gray-200 dark:bg-gray-800 animate-pulse"</span>
+<span class="cstat-no" title="statement not covered" >      data-testid="image-loading-state"</span>
+<span class="cstat-no" title="statement not covered" >      role="status"</span>
+<span class="cstat-no" title="statement not covered" >      aria-live="polite"</span>
+<span class="cstat-no" title="statement not covered" >      :aria-label="`Loading ${alt}`"</span>
 <span class="cstat-no" title="statement not covered" >    /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    </span>
+<span class="cstat-no" title="statement not covered" >    &lt;!-- Blur Overlay --&gt;</span>
 <span class="cstat-no" title="statement not covered" >    &lt;div</span>
-<span class="cstat-no" title="statement not covered" >      v-if="isLoaded &amp;&amp; isBlurred"</span>
+<span class="cstat-no" title="statement not covered" >      v-if="shouldShowBlur"</span>
 <span class="cstat-no" title="statement not covered" >      class="absolute inset-0 backdrop-blur-sm"</span>
+<span class="cstat-no" title="statement not covered" >      data-testid="image-blur-overlay"</span>
 <span class="cstat-no" title="statement not covered" >    /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    </span>
+<span class="cstat-no" title="statement not covered" >    &lt;!-- Error State --&gt;</span>
 <span class="cstat-no" title="statement not covered" >    &lt;div</span>
 <span class="cstat-no" title="statement not covered" >      v-if="hasError"</span>
-<span class="cstat-no" title="statement not covered" >      class="absolute inset-0 flex items-center justify-center bg-muted"</span>
+<span class="cstat-no" title="statement not covered" >      class="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-900"</span>
+<span class="cstat-no" title="statement not covered" >      role="alert"</span>
+<span class="cstat-no" title="statement not covered" >      aria-live="assertive"</span>
+<span class="cstat-no" title="statement not covered" >      data-testid="image-error-state"</span>
 <span class="cstat-no" title="statement not covered" >    &gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;Icon name="lucide:image-off" class="h-12 w-12 text-muted-foreground" /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Icon </span>
+<span class="cstat-no" title="statement not covered" >        name="lucide:image-off" </span>
+<span class="cstat-no" title="statement not covered" >        class="h-12 w-12 text-gray-400 dark:text-gray-600"</span>
+<span class="cstat-no" title="statement not covered" >        aria-hidden="true"</span>
+<span class="cstat-no" title="statement not covered" >      /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;span class="sr-only"&gt;Error loading image: {{ alt }}&lt;/span&gt;</span>
 <span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >  &lt;/div&gt;</span>
 <span class="cstat-no" title="statement not covered" >&lt;/template&gt;</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >&lt;script setup lang="ts"&gt;</span>
-<span class="cstat-no" title="statement not covered" >import { ref, onMounted, watch } from 'vue'</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >/**</span>
-<span class="cstat-no" title="statement not covered" > * Props for the LazyImage component</span>
-<span class="cstat-no" title="statement not covered" > * @property {string} src - The source URL of the image</span>
-<span class="cstat-no" title="statement not covered" > * @property {string} alt - The alternative text for the image</span>
-<span class="cstat-no" title="statement not covered" > */</span>
-<span class="cstat-no" title="statement not covered" >const props = defineProps&lt;{</span>
+<span class="cstat-no" title="statement not covered" >interface OptimizedImageProps {</span>
 <span class="cstat-no" title="statement not covered" >  src: string</span>
 <span class="cstat-no" title="statement not covered" >  alt: string</span>
-<span class="cstat-no" title="statement not covered" >}&gt;()</span>
+<span class="cstat-no" title="statement not covered" >  sizes?: string</span>
+<span class="cstat-no" title="statement not covered" >  quality?: number</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >/**</span>
-<span class="cstat-no" title="statement not covered" > * Tracks whether the image has finished loading</span>
-<span class="cstat-no" title="statement not covered" > * @type {Ref&lt;boolean&gt;}</span>
-<span class="cstat-no" title="statement not covered" > */</span>
+<span class="cstat-no" title="statement not covered" >const props = withDefaults(defineProps&lt;OptimizedImageProps&gt;(), {</span>
+<span class="cstat-no" title="statement not covered" >  sizes: 'sm:640px md:768px lg:1024px xl:1280px 2xl:1536px',</span>
+<span class="cstat-no" title="statement not covered" >  quality: 80</span>
+<span class="cstat-no" title="statement not covered" >})</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >const MIN_QUALITY = 10</span>
+<span class="cstat-no" title="statement not covered" >const MAX_QUALITY = 100</span>
+<span class="cstat-no" title="statement not covered" >const LOAD_TRANSITION_DELAY_MS = 300</span>
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >const isLoaded = ref(false)</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >/**</span>
-<span class="cstat-no" title="statement not covered" > * Controls the blur effect state during image loading</span>
-<span class="cstat-no" title="statement not covered" > * @type {Ref&lt;boolean&gt;}</span>
-<span class="cstat-no" title="statement not covered" > */</span>
 <span class="cstat-no" title="statement not covered" >const isBlurred = ref(true)</span>
+<span class="cstat-no" title="statement not covered" >const hasError = ref(false)</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >const shouldShowLoading = computed(() =&gt; !isLoaded.value || isBlurred.value)</span>
+<span class="cstat-no" title="statement not covered" >const shouldShowBlur = computed(() =&gt; isLoaded.value &amp;&amp; isBlurred.value)</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >/**</span>
-<span class="cstat-no" title="statement not covered" > * Tracks whether the image failed to load</span>
-<span class="cstat-no" title="statement not covered" > * @type {Ref&lt;boolean&gt;}</span>
+<span class="cstat-no" title="statement not covered" > * Validates the quality prop value</span>
+<span class="cstat-no" title="statement not covered" > * @throws {Error} If quality is outside valid range</span>
 <span class="cstat-no" title="statement not covered" > */</span>
-<span class="cstat-no" title="statement not covered" >const hasError = ref(false)</span>
+<span class="cstat-no" title="statement not covered" >const validateQuality = (quality: number) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  if (quality &lt; MIN_QUALITY || quality &gt; MAX_QUALITY) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error(</span>
+<span class="cstat-no" title="statement not covered" >      `Image quality must be between ${MIN_QUALITY} and ${MAX_QUALITY}`</span>
+<span class="cstat-no" title="statement not covered" >    )</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >/**</span>
 <span class="cstat-no" title="statement not covered" > * Handles successful image load</span>
-<span class="cstat-no" title="statement not covered" > * Removes blur effect after a short delay for smooth transition</span>
+<span class="cstat-no" title="statement not covered" > * @emits load When image finishes loading</span>
 <span class="cstat-no" title="statement not covered" > */</span>
-<span class="cstat-no" title="statement not covered" >const handleLoad = (): void =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >const handleImageLoad = () =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  isLoaded.value = true</span>
 <span class="cstat-no" title="statement not covered" >  hasError.value = false</span>
-<span class="cstat-no" title="statement not covered" >  // Add a small delay before removing the blur effect</span>
+<span class="cstat-no" title="statement not covered" >  </span>
 <span class="cstat-no" title="statement not covered" >  setTimeout(() =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    isBlurred.value = false</span>
-<span class="cstat-no" title="statement not covered" >  }, 300)</span>
+<span class="cstat-no" title="statement not covered" >  }, LOAD_TRANSITION_DELAY_MS)</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >/**</span>
 <span class="cstat-no" title="statement not covered" > * Handles image loading errors</span>
-<span class="cstat-no" title="statement not covered" > * Sets error state and removes loading states</span>
+<span class="cstat-no" title="statement not covered" > * @emits error When image loading fails</span>
 <span class="cstat-no" title="statement not covered" > */</span>
-<span class="cstat-no" title="statement not covered" >const handleError = (): void =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >const handleImageError = (error: Event) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  hasError.value = true</span>
 <span class="cstat-no" title="statement not covered" >  isLoaded.value = true</span>
 <span class="cstat-no" title="statement not covered" >  isBlurred.value = false</span>
+<span class="cstat-no" title="statement not covered" >  console.error('Image load failed:', error)</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >// Validate quality prop on initialization and changes</span>
+<span class="cstat-no" title="statement not covered" >watch(() =&gt; props.quality, (newQuality) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  validateQuality(newQuality)</span>
+<span class="cstat-no" title="statement not covered" >}, { immediate: true })</span>
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >/**</span>
-<span class="cstat-no" title="statement not covered" > * Preloads the image and sets up load/error handlers</span>
-<span class="cstat-no" title="statement not covered" > * Resets component state before loading</span>
+<span class="cstat-no" title="statement not covered" > * Resets component state when source changes</span>
 <span class="cstat-no" title="statement not covered" > */</span>
-<span class="cstat-no" title="statement not covered" >const preloadImage = (): void =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  if (!props.src) return</span>
-<span class="cstat-no" title="statement not covered" >  </span>
+<span class="cstat-no" title="statement not covered" >watch(() =&gt; props.src, () =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  isLoaded.value = false</span>
 <span class="cstat-no" title="statement not covered" >  isBlurred.value = true</span>
 <span class="cstat-no" title="statement not covered" >  hasError.value = false</span>
-<span class="cstat-no" title="statement not covered" >  </span>
-<span class="cstat-no" title="statement not covered" >  const img = new Image()</span>
-<span class="cstat-no" title="statement not covered" >  img.onload = handleLoad</span>
-<span class="cstat-no" title="statement not covered" >  img.onerror = handleError</span>
-<span class="cstat-no" title="statement not covered" >  img.src = props.src</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >// Watch for src changes to reload the image</span>
-<span class="cstat-no" title="statement not covered" >watch(() =&gt; props.src, () =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  preloadImage()</span>
 <span class="cstat-no" title="statement not covered" >})</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >onMounted(() =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  preloadImage()</span>
-<span class="cstat-no" title="statement not covered" >})</span>
-<span class="cstat-no" title="statement not covered" >&lt;/script&gt; </span></pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >&lt;/script&gt;</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-02T17:54:29.040Z
+                at 2025-04-02T19:20:32.423Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
