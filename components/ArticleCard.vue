@@ -5,6 +5,8 @@
         v-if="article?.urlToImage"
         :src="article.urlToImage"
         :alt="article.title"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        :quality="85"
         class="h-full w-full transition-transform duration-300 group-hover:scale-105"
       />
       <div v-else class="flex h-full w-full items-center justify-center bg-muted">

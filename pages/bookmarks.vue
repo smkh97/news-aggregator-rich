@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-8">
+  <div class="container my-8">
     <div class="mb-8">
       <h1 class="text-3xl font-bold tracking-tight">Bookmarked Articles</h1>
       <p class="text-muted-foreground mt-2">Your saved articles for later reading.</p>

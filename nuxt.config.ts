@@ -1,4 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -8,13 +10,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxt/image'
   ],
-  runtimeConfig: {
-    public: {
-      newsApiKey: process.env.NUXT_PUBLIC_NEWS_API_KEY
-    }
-  },
   app: {
     head: {
       title: 'News Aggregator',
@@ -33,5 +31,23 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: ['@vueuse/core']
+  },
+  runtimeConfig: {
+    public: {
+      newsApiKey: process.env.NUXT_PUBLIC_NEWS_API_KEY
+    }
+  },
+  // Add image configuration with proper typing
+  image: {
+    domains: [],
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          quality: 80,
+          fit: 'cover'
+        }
+      }
+    }
   }
 })
