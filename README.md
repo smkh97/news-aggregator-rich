@@ -81,6 +81,19 @@ news-aggregator/
 - **Web Vitals**: Ensures performance is continuously monitored by tracking key user experience metrics such as First Contentful Paint (FCP) and Cumulative Layout Shift (CLS), allowing for optimizations based on real-world data.  
 - **NewsAPI**: A reliable and scalable third-party news source, allowing easy integration of dynamic news content without maintaining a dedicated backend for article retrieval.  
 
+### Trade off
+
+Though nuxt 3 images a module has been set with appropriate settings for dynamic url the configuration 
+is not being applied for all images as there are breakages from the news api urls 
+
+XSS headers and cross site scripting policy was previously tried to be set and removed since the news api url are too random urls
+to apply self script as chrome blocks xss policy 
+
+Search page has been added fuzzy search type of debounce function for intutive feel for user , The drawback is more api calls 
+But this would be more appropriate as to waste user time much 
+
+Finally emit function need to be improved
+
 
 ### **Screenshots Links**  
 
@@ -109,8 +122,9 @@ Check the script runner for more information
 npm test
 
 ```
-## License
+## Deployed Link 
+
+https://mynewsaggregator.vercel.app/
 
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
