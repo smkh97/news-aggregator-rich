@@ -1,0 +1,49 @@
+{
+  "name": "news-aggregator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/tailwindcss": "^6.11.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/lodash-es": "^4.17.12",
+    "@vueuse/core": "^10.7.2",
+    "@vueuse/nuxt": "^10.7.2",
+    "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lodash-es": "^4.17.21",
+    "lucide-vue-next": "^0.344.0",
+    "mitt": "^3.0.1",
+    "nuxt-icon": "^0.6.8",
+    "pinia": "^2.1.7",
+    "radix-vue": "^1.4.3",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.19",
+    "web-vitals": "^3.5.2"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@pinia/testing": "^1.0.0",
+    "@types/node": "^20.11.19",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vitest/coverage-v8": "^1.2.1",
+    "@vue/test-utils": "^2.4.3",
+    "jsdom": "^24.0.0",
+    "nuxt": "^3.10.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.1"
+  }
+}
