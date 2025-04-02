@@ -1,14 +1,22 @@
 <template>
   <div class="group relative flex flex-col overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md cursor-pointer">
     <div class="relative aspect-video overflow-hidden">
-      <LateImage
-        v-if="article?.urlToImage"
+
+      <NuxtImg
+         v-if="article?.urlToImage"
         :src="article.urlToImage"
         :alt="article.title"
-        sizes="(max-width: 768px) 100vw, 50vw"
-        :quality="85"
-        class="h-full w-full transition-transform duration-300 group-hover:scale-105"
-      />
+        sizes="100vw sm:50vw md:400px"
+        densities="x1 x2"
+         format="webp"
+          quality="80"
+          width="500"
+          height="500"
+          fit="cover"
+          preload
+        />
+       
+    
       <div v-else class="flex h-full w-full items-center justify-center bg-muted">
         <Icon name="lucide:image-off" class="h-8 w-8 sm:h-12 sm:w-12 text-muted-foreground" />
       </div>

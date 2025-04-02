@@ -3,7 +3,7 @@
     class="relative overflow-hidden"
     role="img"
     :aria-label="alt"
-    :style="{ paddingTop: `${(height/width)*100}%` }"
+   
   >
     <div class="absolute top-0 left-0 w-full h-full">
       <NuxtImg
@@ -14,12 +14,6 @@
         fit="cover"
         width="500"
         height="500"
-        class="w-full h-full object-cover transition-opacity duration-300"
-        :class="{ 'opacity-0': isBlurred }"
-        :loading="critical ? 'eager' : 'lazy'"
-        :modifiers="{ quality, fit: 'cover' }"
-        :sizes="calculatedSizes"
-        densities="x1 x2"
         data-testid="optimized-image"
         preload 
         @load="handleImageLoad"
