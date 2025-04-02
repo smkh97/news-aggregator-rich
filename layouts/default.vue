@@ -25,13 +25,4 @@
 </template>
 
 <script setup lang="ts">
-const categories = [
-  'general',
-  'business',
-  'technology',
-  'entertainment',
-  'health',
-  'science',
-  'sports'
-]
 </script> 

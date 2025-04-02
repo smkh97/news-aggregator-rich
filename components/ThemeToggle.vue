@@ -7,7 +7,7 @@
     >
       <Icon
         :name="colorMode.value === 'dark' ? 'lucide:sun' : 'lucide:moon'"
-          class="h-4 w-4 sm:h-6 sm:w-6"
+          class="h-6 w-6"
       />
       <span class="sr-only">Toggle theme</span>
     </button>

@@ -1,21 +1,23 @@
 <template>
-  <nav class="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+  <!-- Top Navigation -->
+  <nav class="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black">
     <div class="container flex h-16 items-center justify-between px-4 sm:px-6">
       <NuxtLink to="/" class="flex items-center space-x-2 hover:opacity-80 transition-opacity cursor-pointer" @click="handleHomeClick">
-        <Icon name="lucide:newspaper" class="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-        <span class="text-lg sm:text-xl font-bold truncate">News Aggregator</span>
+        <Icon name="lucide:newspaper" class="h-5 w-5 sm:h-6 sm:w-6 text-gray-900 dark:text-white" />
+        <span class="text-lg sm:text-xl font-bold truncate text-gray-900 dark:text-white">News Aggregator</span>
       </NuxtLink>
 
-      <div class="flex items-center space-x-2 sm:space-x-6">
+      <!-- Desktop Navigation -->
+      <div class="hidden sm:flex items-center space-x-6">
         <NuxtLink
           v-for="item in navigationItems"
           :key="item.path"
           :to="item.path"
-          class="inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative"
-          :class="{ 'text-foreground': route.path === item.path }"
+          class="inline-flex items-center gap-2 text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white cursor-pointer relative"
+          :class="{ 'text-gray-900 dark:text-white': route.path === item.path }"
           @click="handleNavigation(item.path)"
         >
-          <Icon :name="item.icon" class="h-4 w-4 sm:h-5 sm:w-5" />
+          <Icon :name="item.icon" class="h-5 w-5" />
           <span class="hidden sm:inline">{{ item.label }}</span>
           <div
             v-if="route.path === item.path"
@@ -24,8 +26,34 @@
         </NuxtLink>
         <ThemeToggle />
       </div>
+
+      <!-- Mobile Theme Toggle -->
+      <div class="sm:hidden">
+        <ThemeToggle />
+      </div>
     </div>
   </nav>
+
+  <!-- Mobile Bottom Navigation -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-black pb-safe z-50">
+    <div class="container flex justify-around items-center h-16 px-4">
+      <NuxtLink
+        v-for="item in navigationItems"
+        :key="item.path"
+        :to="item.path"
+        class="flex flex-col items-center justify-center gap-1 text-xs font-medium text-gray-600 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white relative flex-1"
+        :class="{ 'text-gray-900 dark:text-white': route.path === item.path }"
+        @click="handleNavigation(item.path)"
+      >
+        <Icon :name="item.icon" class="h-5 w-5" />
+        <span>{{ item.label }}</span>
+        <div
+          v-if="route.path === item.path"
+          class="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"
+        />
+      </NuxtLink>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
