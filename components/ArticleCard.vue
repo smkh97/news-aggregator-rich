@@ -63,7 +63,6 @@
 <script setup lang="ts">
 import { useBookmarksStore } from '~/stores/bookmarks'
 import { ref, onMounted, watch } from 'vue'
-import LateImage from './LateImage.vue'
 
 /**
  * Interface representing a news article from the API
