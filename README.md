@@ -122,9 +122,6 @@ Check the script runner for more information
 npm test
 
 ```
-## Deployed Link 
-
-https://mynewsaggregator.vercel.app/
 
 
 
