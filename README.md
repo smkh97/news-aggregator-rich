@@ -92,12 +92,11 @@ to apply self script as chrome blocks xss policy
 - Search page has been added fuzzy search type of debounce function for intutive feel for user , The drawback is more api calls 
 But this would be more appropriate as to waste user time much 
 
-Finally emit function need to be improved
-
+- Finally emit function need to be improved
 
 ### **Screenshots Links**  
 
-- Check the public folder for screenshots of the images includes both desktop and mobile displays public/
+- Check the public folder for screenshots of the images includes both desktop and mobile displays @public/
 
 
 ### **Performance Optimizations**  
