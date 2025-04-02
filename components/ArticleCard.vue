@@ -6,14 +6,13 @@
          v-if="article?.urlToImage"
         :src="article.urlToImage"
         :alt="article.title"
-        sizes="100vw sm:50vw md:400px"
-        densities="x1 x2"
-         format="webp"
-          quality="80"
-          width="500"
-          height="500"
-          fit="cover"
-          preload
+         densities="x1 x2"
+         format="webp,avif,jpeg"
+         quality="80"
+         width="500"
+         height="500"
+         fit="cover"
+         preload
         />
        
     
